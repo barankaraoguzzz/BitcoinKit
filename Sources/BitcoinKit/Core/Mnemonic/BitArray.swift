@@ -42,6 +42,9 @@ import Foundation
 public struct BitArray: Hashable, RangeReplaceableCollection {
 
     // MARK: Creating a BitArray
+    public func replaceSubrange<C>(_ subrange: Range<Int>, with newElements: C) where C : Collection, Bool == C.Element {
+        
+    }
 
     /// Constructs an empty bit array.
     public init() {}
