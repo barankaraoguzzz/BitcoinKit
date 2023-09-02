@@ -11,15 +11,6 @@
         }
       },
       {
-        "package": "COpenSSL",
-        "repositoryURL": "https://github.com/vapor-community/copenssl.git",
-        "state": {
-          "branch": null,
-          "revision": "a347e9ec038b134aecf42e0c21f2deb9035adf3f",
-          "version": "1.0.0-rc.1"
-        }
-      },
-      {
         "package": "Core",
         "repositoryURL": "https://github.com/vapor/core.git",
         "state": {
@@ -35,6 +26,15 @@
           "branch": null,
           "revision": "fc5a27d6eb236141dc24e5f14eedaa2e035ae7b3",
           "version": "1.1.1"
+        }
+      },
+      {
+        "package": "OpenSSL",
+        "repositoryURL": "https://github.com/krzyzanowskim/OpenSSL.git",
+        "state": {
+          "branch": null,
+          "revision": "0faf71a188bcfdf0245cab42886b9b240ca71c52",
+          "version": "1.1.2200"
         }
       },
       {
