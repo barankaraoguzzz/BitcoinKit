@@ -8,7 +8,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/krzyzanowskim/OpenSSL.git", .exactItem(.init("1.1.2200")!)),
-        .package(url: "https://github.com/Boilertalk/secp256k1.swift", .upToNextMinor(from: "0.1.0")),
+        .package(url: "https://github.com/GigaBitcoin/secp256k1.swift.git", .exactItem(.init("0.5.0")!)),
         .package(url: "https://github.com/vapor-community/random.git", .upToNextMinor(from: "1.2.0"))
     ],
     targets: [
@@ -22,7 +22,7 @@ let package = Package(
         ),
         .testTarget(
             name: "BitcoinKitTests",
-            dependencies: ["BitcoinKit"]
+            dependencies: ["OpenSSL", "secp256k1", "Random", "BitcoinKit"]
         )
     ],
     swiftLanguageVersions: [.v5]
